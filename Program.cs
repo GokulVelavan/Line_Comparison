@@ -10,7 +10,14 @@ namespace Line_Comparision
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to LineComparison Computation Program");
+            double x1, y1, x2, y2,z;
+            Console.WriteLine("Enter the Points x1,y1, and x2,y2");//getting input from the user
+            x1 = double.Parse(Console.ReadLine());
+            y1 = double.Parse(Console.ReadLine());
+            x2 = double.Parse(Console.ReadLine());
+            y2 = double.Parse(Console.ReadLine());
+            z = Math.Sqrt(Math.Pow(x2-x1,2)+Math.Pow(y2-y1,2));//length of the line
+            Console.WriteLine("Length of the line:{0}",z);
             Console.ReadLine();
         }
     }
