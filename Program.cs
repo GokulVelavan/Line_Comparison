@@ -25,7 +25,7 @@ namespace Line_Comparision
             y4 = double.Parse(Console.ReadLine());
             z = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));//length of the 1st line 
             z2 = Math.Sqrt(Math.Pow(x4 - x3, 2) + Math.Pow(y4 - y3, 2));//length of the 2st line 
-            if (z == z2)
+            if (z == z2)//comparing the two lines
             {
                 Console.WriteLine("Two Lines Are Equal.");
             }
@@ -40,7 +40,7 @@ namespace Line_Comparision
         }
         static void Main(string[] args)
         {
-            Find_Type_Of_Line();
+            Find_Type_Of_Line();//calling the method from the main method.
             Console.ReadLine();
         }
     }
