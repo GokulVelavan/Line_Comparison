@@ -31,11 +31,11 @@ namespace Line_Comparision
             }
             else if (z > z2)
             {
-                Console.WriteLine("Line 1 is Greater Than Line 2");
+                Console.WriteLine("Line 1 is Greater Than Line 2.");
             }
             else
             {
-                Console.WriteLine("Line 2 is Greater Than Line 1");
+                Console.WriteLine("Line 2 is Greater Than Line 1.");
             }
         }
         static void Main(string[] args)
