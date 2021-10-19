@@ -27,7 +27,7 @@ namespace Line_Comparision
             z2 = Math.Sqrt(Math.Pow(x4 - x3, 2) + Math.Pow(y4 - y3, 2));//length of the 2st line 
             if (z == z2)
             {
-            Console.WriteLine("Two Lines Are Equal");
+            Console.WriteLine("Two Lines Are Equal.");
             }
             else
             {
