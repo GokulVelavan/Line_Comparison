@@ -8,9 +8,9 @@ namespace Line_Comparision
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Find_Type_Of_Line()
         {
-            double x1, y1, x2, y2,z;
+            double x1, y1, x2, y2, z;
             double x3, y3, x4, y4, z2;
 
             Console.WriteLine("Enter the Points x1,y1, and x2,y2 to find the Length of the First Line");//getting input from the user
@@ -23,20 +23,24 @@ namespace Line_Comparision
             y3 = double.Parse(Console.ReadLine());
             x4 = double.Parse(Console.ReadLine());
             y4 = double.Parse(Console.ReadLine());
-            z = Math.Sqrt(Math.Pow(x2-x1,2)+Math.Pow(y2-y1,2));//length of the 1st line 
+            z = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));//length of the 1st line 
             z2 = Math.Sqrt(Math.Pow(x4 - x3, 2) + Math.Pow(y4 - y3, 2));//length of the 2st line 
             if (z == z2)
             {
-            Console.WriteLine("Two Lines Are Equal.");
+                Console.WriteLine("Two Lines Are Equal.");
             }
             else if (z > z2)
             {
-                Console.WriteLine("Line 1 is Greater Than Line 2");
+                Console.WriteLine("Line 1 is Greater Than Line 2.");
             }
             else
             {
-                Console.WriteLine("Line 2 is Greater Than Line 1");
+                Console.WriteLine("Line 2 is Greater Than Line 1.");
             }
+        }
+        static void Main(string[] args)
+        {
+            Find_Type_Of_Line();
             Console.ReadLine();
         }
     }
