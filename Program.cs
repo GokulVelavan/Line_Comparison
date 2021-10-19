@@ -29,9 +29,13 @@ namespace Line_Comparision
             {
             Console.WriteLine("Two Lines Are Equal.");
             }
+            else if (z > z2)
+            {
+                Console.WriteLine("Line 1 is Greater Than Line 2");
+            }
             else
             {
-                Console.WriteLine("Two Lines Are Not Equal");
+                Console.WriteLine("Line 2 is Greater Than Line 1");
             }
             Console.ReadLine();
         }
